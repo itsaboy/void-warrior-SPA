@@ -1,0 +1,110 @@
+/* ==========================================================================
+   animations
+========================================================================== */
+
+@keyframes fadeIn {
+    0% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity:0;
+    }
+    7% {
+        opacity:0;
+    }
+    50% {
+        opacity:1;
+    }
+    100% {
+        opacity:0;
+    }
+}
+
+@keyframes slide-right {
+    0% {
+      transform: translateX(-100%);
+      filter: opacity(0);
+    }
+
+    100% {
+      transform: translateX(0);
+      filter: opacity(1);
+    }
+}
+
+@keyframes slide-left {
+    0% {
+      transform: translateX(100%);
+      filter: opacity(0);
+    }
+
+    100% {
+      transform: translateX(0);
+      filter: opacity(1);
+    }
+}
+
+/* on load
+========================================================================== */
+
+#title {
+    animation-name: slide-right;
+    animation-duration: 4s;
+}
+
+.section-heading {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+}
+
+.section-flex-container {
+    animation-name: slide-left;
+    animation-duration: 1s;
+}
+
+/* character slideshow
+========================================================================== */
+
+#slideshow {
+    animation-name: fade;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+/* hover effects
+========================================================================== */
+
+.nav-flex-item:hover {
+    cursor: pointer;
+    color: var(--main-txt-color);
+    text-decoration: underline;
+    transform: translateY(3px);
+}
+
+.section-flex-container a:hover {
+    cursor: pointer;
+    color: var(--main-txt-color);
+    text-decoration: underline;
+    transform: translateY(3px);
+}
+
+/* click effects
+========================================================================== */
+
+.nav-flex-item:active {
+    cursor: pointer;
+    color: var(--main-txt-color);
+    transform: translateY(5px);
+}
+
+.section-flex-container a:active {
+    cursor: pointer;
+    color: var(--main-txt-color);
+    transform: translateY(5px);
+}

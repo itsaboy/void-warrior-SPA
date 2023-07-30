@@ -1,0 +1,172 @@
+/* ==========================================================================
+   variables
+========================================================================== */
+
+:root {
+
+/* colors
+========================================================================== */
+
+    --main-bg-color: rgb(15, 15, 15);
+    --transparent-bg-color: rgba(150, 150, 150, 0.5);
+    --main-txt-color: rgb(200, 200, 200);
+    --red-txt-color: rgb(210,39,48);
+    --green-txt-color: rgb(68,214,44);
+    --blue-txt-color: rgb(77,77,255);
+
+/* font sizes
+========================================================================== */
+
+    --largest-size: clamp(2.75rem, 6vw + 1rem, 6rem);
+    --larger-size: clamp(2rem, 2.5vw + 1rem, 4rem);
+    --large-size: clamp(1.5rem, 2vw + 1rem, 3rem);
+    --normal-size: clamp(1rem, 1vw + 1rem, 2rem);
+    --small-size: clamp(0.8rem, 0.8vw + 1rem, 1.2rem);
+
+/* box shadows
+========================================================================== */
+
+    --shadow-color: 0deg 0% 0%;
+    --shadow-elevation-low:
+    0.3px 0.2px 0.3px hsl(var(--shadow-color) / 1),
+    0.4px 0.4px 0.4px -2.5px hsl(var(--shadow-color) / 0.69),
+    1.3px 1.2px 1.3px -5px hsl(var(--shadow-color) / 0.35);
+    --shadow-elevation-medium:
+    0.3px 0.2px 0.3px hsl(var(--shadow-color) / 0.88),
+    0.4px 0.3px 0.4px -1.2px hsl(var(--shadow-color) / 0.7),
+    1px 1px 1.1px -2.5px hsl(var(--shadow-color) / 0.52),
+    2.9px 2.7px 3px -3.7px hsl(var(--shadow-color) / 0.35),
+    6.5px 6.2px 6.7px -5px hsl(var(--shadow-color) / 0.17);
+    --shadow-elevation-high:
+    0.3px 0.2px 0.3px hsl(var(--shadow-color) / 0.9),
+    0.3px 0.3px 0.3px -0.6px hsl(var(--shadow-color) / 0.8),
+    0.9px 0.8px 0.9px -1.2px hsl(var(--shadow-color) / 0.7),
+    2.3px 2.2px 2.4px -1.9px hsl(var(--shadow-color) / 0.6),
+    5.1px 4.8px 5.3px -2.5px hsl(var(--shadow-color) / 0.5),
+    9.7px 9.2px 10px -3.1px hsl(var(--shadow-color) / 0.4),
+    16.6px 15.7px 17.1px -3.7px hsl(var(--shadow-color) / 0.3),
+    26.3px 24.9px 27.2px -4.4px hsl(var(--shadow-color) / 0.2),
+    39.1px 37px 40.4px -5px hsl(var(--shadow-color) / 0.1);
+
+}
+
+/* ==========================================================================
+   fonts
+========================================================================== */
+
+@font-face {
+    font-family: Medieval;
+    src: url('../fonts/MedievalSharp-Regular.ttf');
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url('../fonts/Ubuntu-Regular.ttf');
+}
+
+/* ==========================================================================
+   body styles
+========================================================================== */
+
+body {
+    background-color: var(--main-bg-color);
+}
+
+/* ==========================================================================
+   header styles
+========================================================================== */
+
+header {
+    background-color: var(--main-bg-color);
+    color: var(--main-txt-color);
+}
+
+#title {
+    font-size: var(--largest-size);
+    font-family: Medieval;
+}
+
+/* flex container for navigation links
+========================================================================== */
+
+.nav-flex-item {
+    font-size: var(--large-size);
+    color: var(--blue-txt-color);
+    font-family: Ubuntu;
+}
+
+#support {
+    color: var(--red-txt-color);
+    text-decoration: line-through;
+}
+
+/* ==========================================================================
+   main styles
+========================================================================== */
+
+main {
+    background-image: url('../images/backgrounds/stacked-waves.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-grid-container h2 {
+    font-size: var(--larger-size);
+    color: var(--green-txt-color);
+    font-family: Ubuntu;
+}
+
+#slideshow {
+    width: clamp(225px, 40vw, 100rem);
+    height: auto;
+    filter: drop-shadow(5px 5px 5px black);
+    place-self: center;
+}
+
+/* flex container for main sections
+========================================================================== */
+
+.section-flex-container {
+    background-color: var(--transparent-bg-color);
+    border-radius: 2rem;
+    box-shadow: var(--shadow-elevation-high);
+}
+
+#section2-container {
+    border-right: solid var(--red-txt-color) 0.5rem;
+    border-bottom: solid var(--red-txt-color) 0.5rem;
+}
+
+#section3-container {
+    border-right: solid var(--main-bg-color) 0.5rem;
+    border-bottom: solid var(--main-bg-color) 0.5rem;
+}
+
+.section-flex-container a, p {
+    font-size: var(--normal-size);
+    font-family: Ubuntu;
+    color: var(--main-txt-color);
+}
+
+video {
+    width: clamp(200px, 30vw, 100rem);
+}
+
+/* ==========================================================================
+   footer styles
+========================================================================== */
+
+footer {
+    background-color: var(--main-bg-color);
+}
+
+.footer-flex-item {
+    font-size: var(--small-size);
+    font-family: Ubuntu;
+    color: var(--main-txt-color);
+}
+
+.icon {
+    width: var(--larger-size);
+}

@@ -1,0 +1,175 @@
+/* ==========================================================================
+   grid container for body
+========================================================================== */
+
+body {
+    overflow-x: hidden;
+}
+
+.body-grid-container {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    grid-template-rows: 12rem 6fr 6rem;
+    grid-template-columns: 1fr;
+    height: 125vh;
+    text-align: center;
+    gap: 3rem;
+}
+
+/* body grid items */
+
+#header {
+    grid-area: header;
+}
+
+#main {
+    grid-area: main;
+}
+
+#footer {
+    grid-area: footer;
+}
+
+/* ==========================================================================
+   grid container for header
+========================================================================== */
+
+.header-grid-container {
+    display: grid;
+    grid-template-areas:
+    "title nav";
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 3fr;
+    height: 100%;
+    place-items: center;
+}
+
+/* header grid items */
+
+#title {
+    grid-area: title;
+}
+
+#nav {
+    grid-area: nav;
+    width: 100%;
+}
+
+/* flex container for navigation links
+========================================================================== */
+
+.nav-flex-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* ==========================================================================
+   grid container for main
+========================================================================== */
+
+.main-grid-container {
+    display: grid;
+    grid-template-areas:
+    "section1 section2"
+    "section1 section3";
+    grid-template-rows: repeat(2, 2fr);
+    grid-template-columns: 2fr 3fr;
+    height: 100%;
+    width: 90%;
+    margin: auto;
+    gap: 3rem;
+}
+
+/* main grid items */
+
+#section1 {
+    grid-area: section1;
+}
+
+#section2 {
+    grid-area: section2;
+}
+
+#section3 {
+    grid-area: section3;
+}
+
+/* grid container for section one
+========================================================================== */
+
+.section1 {
+    display: grid;
+    grid-template-areas:
+    "slideshow-container";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    width: 75%;
+}
+
+#slideshow-container {
+    display: grid;
+    grid-area: slideshow-container;
+    place-items: center;
+    margin: 0 auto;
+}
+
+#slideshow {
+    display: grid;
+    margin: 0 auto;
+}
+
+/* grid container for section two
+========================================================================== */
+
+.section2 {
+    display: grid;
+    grid-template-areas: 
+    "section2-heading"
+    "section2-container";
+    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 1fr;
+    width: 75%;
+    margin: 0 auto;
+}
+
+/* grid container for section three
+========================================================================== */
+
+.section3 {
+    display: grid;
+    grid-template-areas: 
+    "section3-heading"
+    "section3-container";
+    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 1fr;
+    width: 75%;
+    margin: 0 auto;
+}
+
+/* flex container for section content
+========================================================================== */
+
+.section-flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* ==========================================================================
+   footer flex container
+========================================================================== */
+
+.footer-flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}

@@ -1,0 +1,37 @@
+/* ==========================================================================
+   screen width below 1000px
+========================================================================== */
+
+@media only screen and (max-width: 1000px) {
+
+    .main-grid-container {
+        grid-template-areas:
+        "section1"
+        "section2"
+        "section3";
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+        width: 95%;
+    }
+
+}
+
+/* ==========================================================================
+   screen width below 576px
+========================================================================== */
+
+@media only screen and (max-width: 576px) {
+    
+    .body-grid-container {
+        gap: 1rem;
+    }
+
+    .header-grid-container {
+        grid-template-areas:
+        "title"
+        "nav";
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+    }
+
+}
