@@ -107,7 +107,6 @@ body {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr;
     margin: 0 auto;
-    width: 75%;
 }
 
 #slideshow-container {
