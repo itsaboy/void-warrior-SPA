@@ -57,7 +57,7 @@ const infoLayout = () => {
         </section>
         <!--section two-->
         <section class="main-grid-item section2" id="section2">
-            <h2 class="section-heading" id="section2-heading">Newest Release</h2>
+            <h2 class="section-heading" id="section2-heading">Preview</h2>
             <div class="section-flex-container" id="section2-container">   
                 <video controls>
                     <source src="./assets/vidoe/2023-07-30 03-10-20.mkv">
