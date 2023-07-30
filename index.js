@@ -10,6 +10,6 @@ app.use(() => {
     res.send('<h1>404 Error: Resource Not Found</h1>')
 });
 
-app.listen(5001, () => console.log('API listening on port 5001'));
+app.listen(443, () => console.log('API listening on port 5001'));
 
 app.get('/', (req, res) => res.json('API running'));
