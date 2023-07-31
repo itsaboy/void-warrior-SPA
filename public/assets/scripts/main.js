@@ -35,7 +35,7 @@ const homeLayout = () => {
             <h2 class="section-heading" id="section3-heading">Previous Releases</h2>
             <div class="section-flex-container" id="section3-container">
                 <img src="./assets/icons/microsoft-icon.svg" class="icon"> 
-                <a href="https://void-warrior-demo.s3.amazonaws.com/Void+Warrior+Demo.zip">x64 Demo version 1.0.0</a>
+                <a href="https://void-warrior-demo.s3.amazonaws.com/Void+Warrior+Demo.zip">x64 Demo version 1.0</a>
             </div>
         </section>
     </div>
