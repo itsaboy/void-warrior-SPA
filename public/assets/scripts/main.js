@@ -26,7 +26,7 @@ const homeLayout = () => {
         <section class="main-grid-item section2" id="section2">
             <h2 class="section-heading" id="section2-heading">Newest Release</h2>
             <div class="section-flex-container" id="section2-container">
-                <img src="./assets/icons/microsoft-icon.svg" class="icon">   
+                <img src="./assets/icons/microsoft-icon.svg" class="icon" alt="windows logo">   
                 <a href="https://void-warrior-demo.s3.amazonaws.com/Void+Warrior+Demo+1.0.1.zip">x64 Demo version 1.0.1</a>
             </div>
         </section>
@@ -34,7 +34,7 @@ const homeLayout = () => {
         <section class="main-grid-item section3" id="section3">
             <h2 class="section-heading" id="section3-heading">Previous Releases</h2>
             <div class="section-flex-container" id="section3-container">
-                <img src="./assets/icons/microsoft-icon.svg" class="icon"> 
+                <img src="./assets/icons/microsoft-icon.svg" class="icon" alt="windows logo"> 
                 <a href="https://void-warrior-demo.s3.amazonaws.com/Void+Warrior+Demo.zip">x64 Demo version 1.0</a>
             </div>
         </section>
@@ -60,7 +60,7 @@ const infoLayout = () => {
             <h2 class="section-heading" id="section2-heading">Preview</h2>
             <div class="section-flex-container" id="section2-container">   
                 <video controls>
-                    <source src="./assets/vidoe/2023-07-30 03-10-20.mkv">
+                    <source src="./assets/video/2023-07-30 03-10-20.mkv">
                     Your browser does not support the video tag.
                 </video>
             </div>
