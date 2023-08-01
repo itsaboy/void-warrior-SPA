@@ -27,7 +27,7 @@ const homeLayout = () => {
             <h2 class="section-heading" id="section2-heading">Newest Release</h2>
             <div class="section-flex-container" id="section2-container">
                 <img src="./assets/icons/microsoft-icon.svg" class="icon" alt="windows logo">   
-                <a href="https://void-warrior-demo.s3.amazonaws.com/Void+Warrior+Demo+1.0.1.zip">x64 Demo version 1.0.1</a>
+                <a href="https://void-warrior-demo.s3.amazonaws.com/Void+Warrior+Demo+1.0.2.zip">x64 Demo version 1.0.2</a>
             </div>
         </section>
         <!--section three-->
@@ -35,7 +35,7 @@ const homeLayout = () => {
             <h2 class="section-heading" id="section3-heading">Previous Releases</h2>
             <div class="section-flex-container" id="section3-container">
                 <img src="./assets/icons/microsoft-icon.svg" class="icon" alt="windows logo"> 
-                <a href="https://void-warrior-demo.s3.amazonaws.com/Void+Warrior+Demo.zip">x64 Demo version 1.0</a>
+                <a href="https://void-warrior-demo.s3.amazonaws.com/Void+Warrior+Demo+1.0.1.zip">x64 Demo version 1.0.1</a>
             </div>
         </section>
     </div>
