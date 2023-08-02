@@ -149,6 +149,10 @@ main {
     color: var(--main-txt-color);
 }
 
+.section-flex-container .previous-version {
+    font-size: var(--small-size);
+}
+
 video {
     width: clamp(200px, 30vw, 100rem);
 }

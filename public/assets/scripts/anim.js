@@ -1,5 +1,11 @@
+// Slideshow Function
+
 const slideshowOne = () => {
 
+    // DOM Variable
+    const currentImage = document.querySelector('#slideshow');
+
+    // Array of Images
     const imageArray = [
         "../assets/images/characters/ElfWarrior.png",
         "../assets/images/characters/OrcWarrior.png",
@@ -12,8 +18,7 @@ const slideshowOne = () => {
     const imageLength = imageArray.length;
     let currentImagePlace = 0;
 
-    const currentImage = document.querySelector('#slideshow');
-
+    // Iterates through image array until the last image then repeats iteration
     const imageCycle = () => {
         if (currentImagePlace >= imageLength) {
             currentImagePlace = 0;
@@ -22,16 +27,21 @@ const slideshowOne = () => {
         currentImagePlace++;
     };
 
-    const slideshow = () => {   
+    // Sets timing of image source change to 10 seconds
+    const slideshowTiming = () => {   
         setInterval(imageCycle, 10000); 
     };
 
-    slideshow();
+    slideshowTiming();
 
 };
 
 const slideshowTwo = () => {
 
+    // DOM Variable
+    const currentImage = document.querySelector('#slideshow');
+
+    // Array of Images
     const imageArray = [
         "../assets/images/characters/Necromancer.png",
         "../assets/images/characters/Berserk.png",
@@ -44,8 +54,7 @@ const slideshowTwo = () => {
     const imageLength = imageArray.length;
     let currentImagePlace = 0;
 
-    const currentImage = document.querySelector('#slideshow');
-
+    // Iterates through image array until the last image then repeats iteration
     const imageCycle = () => {
         if (currentImagePlace >= imageLength) {
             currentImagePlace = 0;
@@ -54,6 +63,7 @@ const slideshowTwo = () => {
         currentImagePlace++;
     };
 
+    // Sets timing of image source change to 10 seconds
     const slideshow = () => {   
         setInterval(imageCycle, 10000); 
     };
