@@ -161,6 +161,21 @@ body {
     width: 100%;
 }
 
+/* user input field
+========================================================================== */
+
+#user-input {
+    width: clamp(200px, 30vw + 1rem, 100rem);
+    height: 75%;
+    margin: auto 0;
+    text-align: center;
+}
+
+#submit-button {
+    width: clamp(100px, 12vw, 10rem);
+    margin: auto 0;
+}
+
 /* ==========================================================================
    footer flex container
 ========================================================================== */

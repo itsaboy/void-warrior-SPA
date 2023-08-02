@@ -94,6 +94,17 @@
     transform: translateY(3px);
 }
 
+#submit-button:hover {
+    cursor: not-allowed;
+    background-color: var(--red-txt-color);
+    color: var(--main-txt-color);
+}
+
+#submit-button:active {
+    cursor: not-allowed;
+    transform: translateY(5px);
+}
+
 /* click effects
 ========================================================================== */
 

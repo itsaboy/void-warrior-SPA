@@ -19,7 +19,7 @@
 
     --largest-size: clamp(2.75rem, 6vw + 1rem, 6rem);
     --larger-size: clamp(2rem, 2.5vw + 1rem, 4rem);
-    --large-size: clamp(1.5rem, 2vw + 1rem, 3rem);
+    --large-size: clamp(1.5rem, 1.75vw + 1rem, 3rem);
     --normal-size: clamp(1rem, 1vw + 1rem, 2rem);
     --small-size: clamp(0.8rem, 0.8vw + 1rem, 1.2rem);
 
@@ -95,16 +95,6 @@ header {
     font-family: Ubuntu;
 }
 
-#support {
-    color: var(--red-txt-color);
-    text-decoration: line-through;
-    opacity: 0.5;
-}
-
-#support:hover {
-    cursor: not-allowed;
-}
-
 /* ==========================================================================
    main styles
 ========================================================================== */
@@ -160,6 +150,39 @@ main {
 
 video {
     width: clamp(200px, 30vw, 100rem);
+}
+
+/* user input field
+========================================================================== */
+
+.input {
+    font-size: var(--normal-size);
+    font-family: Ubuntu;
+    border: none;
+    border-radius: 1rem;
+}
+
+#user-input {
+    background-color: var(--transparent-bg-color);
+    color: var(--main-bg-color);
+}
+
+#submit-button {
+    background-color: var(--main-txt-color);
+    color: var(--red-txt-color);
+    padding: 0.5rem 0.25rem;
+    box-shadow: var(--shadow-elevation-medium);
+    text-decoration: line-through;
+}
+
+/* system requirements
+========================================================================== */
+
+h4 {
+    font-family: Ubuntu;
+    font-size: var(--normal-size);
+    color: var(--main-bg-color);
+    font-weight: 600;
 }
 
 /* ==========================================================================
