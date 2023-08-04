@@ -149,7 +149,7 @@ main {
 }
 
 video {
-    width: clamp(200px, 30vw, 100rem);
+    width: 80%;
 }
 
 /* user input field

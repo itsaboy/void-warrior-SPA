@@ -15,7 +15,7 @@ const homePageLayout = () => {
     mainGridContainer.setAttribute('class', 'main-grid-container');
     mainGridContainer.setAttribute('id', 'main-grid-container');
 
-    // Section One of DOM
+    // Home Page Slideshow
     const gridItemSectionOne = document.createElement('section');
     gridItemSectionOne.setAttribute('class', 'main-grid-item section1');
     gridItemSectionOne.setAttribute('id', 'section1');
@@ -29,7 +29,7 @@ const homePageLayout = () => {
     characterArt.setAttribute('alt', 'slideshow of images showcasing various character models from the game');
     characterArt.src= './assets/images/characters/Emperor.png';
 
-    // Section Two of DOM
+    // Most Reason Version Download
     const gridItemSectionTwo = document.createElement('section');
     gridItemSectionTwo.setAttribute('class', 'main-grid-item section2');
     gridItemSectionTwo.setAttribute('id', 'section2');
@@ -52,7 +52,7 @@ const homePageLayout = () => {
     currentDownloadLink.href = 'https://void-warrior-demo.s3.amazonaws.com/Void+Warrior+Demo+1.0.2.zip';
     currentDownloadLink.innerText = 'Demo version 1.0.2';
 
-    // Section Three of DOM
+    // Previous Versions Downloads
     const gridItemSectionThree = document.createElement('section');
     gridItemSectionThree.setAttribute('class', 'main-grid-item section3');
     gridItemSectionThree.setAttribute('id', 'section3');
@@ -87,17 +87,17 @@ const homePageLayout = () => {
     mainGridContainer.append(gridItemSectionTwo);
     mainGridContainer.append(gridItemSectionThree);
 
-    // Section One
+    // Slideshow
     gridItemSectionOne.append(slideshowContainer);
     slideshowContainer.append(characterArt);
 
-    // Section Two
+    // Most Recent Version
     gridItemSectionTwo.append(sectionTwoHeading);
     gridItemSectionTwo.append(sectionTwoFlexContainer);
     sectionTwoFlexContainer.append(platformLogoSectionTwo);
     sectionTwoFlexContainer.append(currentDownloadLink);
 
-    // Section Three
+    // Previous Versions
     gridItemSectionThree.append(sectionThreeHeading);
     gridItemSectionThree.append(sectionThreeFlexContainer);
     sectionThreeFlexContainer.append(platformLogoSectionThree);
@@ -131,7 +131,7 @@ const infoPageLayout = () => {
     mainGridContainer.setAttribute('class', 'main-grid-container');
     mainGridContainer.setAttribute('id', 'main-grid-container');
 
-    // Section One of DOM
+    // Info Page Slideshows
     const gridItemSectionOne = document.createElement('section');
     gridItemSectionOne.setAttribute('class', 'main-grid-item section1');
     gridItemSectionOne.setAttribute('id', 'section1');
@@ -145,7 +145,7 @@ const infoPageLayout = () => {
     characterArt.setAttribute('alt', 'slideshow of images showcasing various character models from the game');
     characterArt.src= './assets/images/characters/King.png';
 
-    // Section Two of DOM
+    // Video Preview
     const gridItemSectionTwo = document.createElement('section');
     gridItemSectionTwo.setAttribute('class', 'main-grid-item section2');
     gridItemSectionTwo.setAttribute('id', 'section2');
@@ -163,7 +163,7 @@ const infoPageLayout = () => {
     const videoSource = document.createElement('source');
     videoSource.src = './assets/video/2023-07-30 03-10-20.mkv';
 
-    // Section Three of DOM
+    // Road Map
     const gridItemSectionThree = document.createElement('section');
     gridItemSectionThree.setAttribute('class', 'main-grid-item section3');
     gridItemSectionThree.setAttribute('id', 'section3');
@@ -178,7 +178,7 @@ const infoPageLayout = () => {
     sectionThreeFlexContainer.setAttribute('id', 'section3-container');
 
     const sectionThreeParagraph = document.createElement('p');
-    sectionThreeParagraph.innerText = "Road Map info will go here";
+    sectionThreeParagraph.innerText = "Total UI redesign underway. Only once this is done will more game content be worked on.";
 
     // DOM manipulation
     domMain.append(mainGridContainer);
@@ -187,17 +187,17 @@ const infoPageLayout = () => {
     mainGridContainer.append(gridItemSectionTwo);
     mainGridContainer.append(gridItemSectionThree);
 
-    // Section One
+    // Slideshow
     gridItemSectionOne.append(slideshowContainer);
     slideshowContainer.append(characterArt);
 
-    // Section Two
+    // Video Preview
     gridItemSectionTwo.append(sectionTwoHeading);
     gridItemSectionTwo.append(sectionTwoFlexContainer);
     sectionTwoFlexContainer.append(videoPreview);
     videoPreview.append(videoSource);
 
-    // Section Three
+    // Road Map
     gridItemSectionThree.append(sectionThreeHeading);
     gridItemSectionThree.append(sectionThreeFlexContainer);
     sectionThreeFlexContainer.append(sectionThreeParagraph);
@@ -229,7 +229,7 @@ const supportPageLayout = () => {
     mainGridContainer.setAttribute('class', 'main-grid-container');
     mainGridContainer.setAttribute('id', 'main-grid-container');
 
-    // Section One of DOM
+    // Support Page Slideshow
     const gridItemSectionOne = document.createElement('section');
     gridItemSectionOne.setAttribute('class', 'main-grid-item section1');
     gridItemSectionOne.setAttribute('id', 'section1');
@@ -243,7 +243,7 @@ const supportPageLayout = () => {
     characterArt.setAttribute('alt', 'slideshow of images showcasing various character models from the game');
     characterArt.src= './assets/images/characters/Marshall.png';
 
-    // Section Two of DOM
+    // Bug Reports (DISABLED)
     const gridItemSectionTwo = document.createElement('section');
     gridItemSectionTwo.setAttribute('class', 'main-grid-item section2');
     gridItemSectionTwo.setAttribute('id', 'section2');
@@ -263,7 +263,6 @@ const supportPageLayout = () => {
     inputField.setAttribute('class', 'input');
     inputField.setAttribute('name', 'user-input');
     inputField.setAttribute('maxlength', '100');
-    inputField.setAttribute('placeholder', 'Bug Reports are currently DISABLED');
     inputField.setAttribute('title', 'DISABLED');
 
     const submitButton = document.createElement('button');
@@ -272,7 +271,7 @@ const supportPageLayout = () => {
     submitButton.setAttribute('title', 'DISABLED');
     submitButton.innerText = 'Submit';
 
-    // Section Three of DOM
+    // System Requirements
     const gridItemSectionThree = document.createElement('section');
     gridItemSectionThree.setAttribute('class', 'main-grid-item section3');
     gridItemSectionThree.setAttribute('id', 'section3');
@@ -302,17 +301,17 @@ const supportPageLayout = () => {
     mainGridContainer.append(gridItemSectionTwo);
     mainGridContainer.append(gridItemSectionThree);
 
-    // Section One
+    // Slideshow
     gridItemSectionOne.append(slideshowContainer);
     slideshowContainer.append(characterArt);
 
-    // Section Two
+    // Bug Reports
     gridItemSectionTwo.append(sectionTwoHeading);
     gridItemSectionTwo.append(sectionTwoFlexContainer);
     sectionTwoFlexContainer.append(inputField);
     sectionTwoFlexContainer.append(submitButton);
 
-    // Section Three
+    // System Requirements
     gridItemSectionThree.append(sectionThreeHeading);
     gridItemSectionThree.append(sectionThreeFlexContainer);
     sectionThreeFlexContainer.append(sectionThreeHeadingOne);

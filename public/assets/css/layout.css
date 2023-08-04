@@ -161,11 +161,16 @@ body {
     width: 100%;
 }
 
+.section-flex-container p {
+    padding: 1.25rem;
+    line-height: 2.5rem;
+}
+
 /* user input field
 ========================================================================== */
 
 #user-input {
-    width: clamp(200px, 30vw + 1rem, 100rem);
+    width: 80%;
     height: 75%;
     margin: auto 0;
     text-align: center;
